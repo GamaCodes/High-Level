@@ -1,0 +1,66 @@
+@content11: content11;
+.@{content11}-wrapper {
+  height: 480px;
+  background: url("https://images.pexels.com/photos/6632414/pexels-photo-6632414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat bottom;
+  background-size: cover;
+  background-size: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  &.home-page-wrapper {
+    .title-wrapper {
+      margin-bottom: 32px;
+    }
+  }
+  .button {
+    box-shadow: 0 8px 16px #0554b7;
+    background: linear-gradient(to right, #05cbff, #1e5aff) !important;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 21px;
+    color: #fff;
+    width: 128px;
+    padding: 0 15px;
+    display: inline-block;
+    transition: transform .3s, box-shadow .3s;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px #0554b7;
+    }
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0 4px 8px #0554b7;
+    }
+  }
+  .title-content {
+    line-height: 32px;
+  }
+}
+
+.content11-wrapper::before {
+  content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(195, 195, 195, 0.6);
+}
+
+.content11-wrapper .title-wrapper {
+	position: relative;
+  margin-top: 6rem;
+}
+
+@media screen and (max-width: 767px) {
+  .@{content11}-wrapper {
+    padding-bottom: 0;
+    height: 300px;
+  }
+  .content11-wrapper .title-wrapper {
+    margin-top: 3rem;
+  }
+}

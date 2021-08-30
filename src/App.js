@@ -1,16 +1,10 @@
-import "./App.css";
+import React from "react";
+import Home from "./page";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Preparandonos para ti</p>
-        <img src="/hlc_logo.svg" alt="logo" />
-        <p className="App-link">Muy pronto</p>
-        <p>2021</p>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <Home />
+  </>
+);
 
 export default App;
